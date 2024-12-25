@@ -15,7 +15,23 @@ Public Sandbox's active package is designed to augment, automate, and enhance Re
 3. Search for `PublicSandbox`
 4. Click **Install** to add the package to your Dynamo environment
 
-## Nodes
+## 3 Recent Nodes
+
+### wall_consolidator
+Consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
+
+**Inputs:**
+- `SourceLevel`: Level to move walls from
+- `TargetLevel`: Level to move walls to
+- `LogPath` (optional): Path for error logging
+
+**Outputs:**
+- `success_list`: List of successfully processed walls
+- `failed_list`: List of walls that failed with error messages
+- `success_ids`: ElementIds of successful walls
+- `failed_ids`: ElementIds of failed walls
+
+*Note: Ensure elements have valid properties and relationships before processing*
 
 ### rooms_to_floors
 Creates floor elements from room boundaries with automatic boundary detection and height control.
@@ -32,6 +48,8 @@ Creates floor elements from room boundaries with automatic boundary detection an
 - `failed_rooms`: List of rooms that failed processing
 - `debug_info`: List of critical messages
 - `preview`: Status messages for Dynamo UI
+
+*Note: Ensure rooms have valid boundaries before processing*
 
 ### rooms_to_ceilings
 Creates ceiling elements from room boundaries with configurable height offset.
@@ -53,8 +71,5 @@ Creates ceiling elements from room boundaries with configurable height offset.
 
 ## Contact
 
-For inquiries, feedback, or support, please contact me at:
-hello@publicsandbox.net
-
-Visit my digital space at:
-[PublicSandbox](https://publicsandbox.net)
+For inquiries, feedback, or support, please contact me at: hello@publicsandbox.net
+Visit my digital space where I document cross-domain works at: [Public Sandbox](https://publicsandbox.net)
