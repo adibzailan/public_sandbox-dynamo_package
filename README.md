@@ -1,4 +1,5 @@
 # Public Sandbox - Dynamo Package
+> Updated: 25 December 2024
 
 Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. TLDR: streamline workflows so we can all head home earlier.
 
@@ -15,7 +16,6 @@ Public Sandbox's active package is designed to augment, automate, and enhance Re
 4. Click **Install** to add the package to your Dynamo environment
 
 ## Nodes
-> as per v1.0.0, 25 December 2024
 
 ### rooms_to_floors
 Creates floor elements from room boundaries with automatic boundary detection and height control.
