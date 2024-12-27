@@ -1,7 +1,8 @@
 # Public Sandbox - Dynamo Package
-> Updated: 25 December 2024
+> Updated: 28 December 2024
+> Version: 1.1.0
 
-Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. TLDR: streamline workflows so we can all head home earlier.
+Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. All nodes are performance-optimized C# ZeroTouch implementations, ensuring maximum efficiency and reliability. TLDR: streamline workflows so we can all head home earlier.
 
 ## Installation
 
@@ -15,10 +16,16 @@ Public Sandbox's active package is designed to augment, automate, and enhance Re
 3. Search for `PublicSandbox`
 4. Click **Install** to add the package to your Dynamo environment
 
+## Recent Updates (v1.1.0)
+- All nodes now use standardized C# ZeroTouch implementation
+- Performance optimization across all nodes
+- Enhanced error handling and logging
+- Improved transaction management
+
 ## 3 Recent Nodes
 
 ### wall_consolidator
-Consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
+Performance-optimized ZeroTouch node that consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
 
 **Inputs:**
 - `SourceLevel`: Level to move walls from
@@ -34,7 +41,7 @@ Consolidates wall elements from one level to another while preserving their rela
 *Note: Ensure elements have valid properties and relationships before processing*
 
 ### rooms_to_floors
-Creates floor elements from room boundaries with automatic boundary detection and height control.
+Performance-optimized ZeroTouch node that creates floor elements from room boundaries with automatic boundary detection and height control.
 
 **Inputs:**
 - `Rooms`: List of rooms to process
@@ -52,7 +59,7 @@ Creates floor elements from room boundaries with automatic boundary detection an
 *Note: Ensure rooms have valid boundaries before processing*
 
 ### rooms_to_ceilings
-Creates ceiling elements from room boundaries with configurable height offset.
+Performance-optimized ZeroTouch node that creates ceiling elements from room boundaries with configurable height offset.
 
 **Inputs:**
 - `Rooms`: List of rooms to process
