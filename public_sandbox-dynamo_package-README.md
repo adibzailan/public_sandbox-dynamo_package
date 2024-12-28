@@ -1,6 +1,6 @@
 # Public Sandbox - Dynamo Package
 > Updated: 28 December 2024
-> Version: 1.1.1
+> Version: 1.1.3
 
 Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. All nodes are performance-optimized C# ZeroTouch implementations, ensuring maximum efficiency and reliability. TLDR: streamline workflows so we can all head home earlier.
 
@@ -16,14 +16,29 @@ Public Sandbox's active package is designed to augment, automate, and enhance Re
 3. Search for `PublicSandbox`
 4. Click **Install** to add the package to your Dynamo environment
 
-## Recent Updates (v1.1.0)
-- All nodes now use standardized C# ZeroTouch implementation
-- Performance optimization across all nodes
-- Enhanced error handling and logging
-- Improved transaction management
-- Standardized namespace to "Geometry" for better categorization
+## Recent Updates (v1.1.3)
+- Added new `grid_extent_switcher` node for automated grid extent management
+- Enhanced logging system with better file access handling
+- Improved error recovery across all nodes
+- Standardized namespace organization for better categorization
 
 ## 3 Recent Nodes
+
+### grid_extent_switcher
+Performance-optimized ZeroTouch node that automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes across multiple views, providing granular control over grid visibility and documentation.
+
+**Inputs:**
+- `Views`: List of views to process grids in
+- `Make2D`: Boolean to toggle between 2D (true) and 3D (false) modes
+- `LogPath` (optional): Path for error logging
+
+**Outputs:**
+- `success_list`: List of successfully processed grid IDs
+- `failed_list`: List of failed grid IDs
+- `preview`: Status messages for Dynamo UI
+- `debug_info`: Detailed debug messages
+
+*Note: Views must be valid for printing and not view templates*
 
 ### wall_consolidator
 Performance-optimized ZeroTouch node that consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
@@ -53,24 +68,6 @@ Performance-optimized ZeroTouch node that creates floor elements from room bound
 
 **Outputs:**
 - `created_floors`: List of created floor ElementIds
-- `failed_rooms`: List of rooms that failed processing
-- `debug_info`: List of critical messages
-- `preview`: Status messages for Dynamo UI
-
-*Note: Ensure rooms have valid boundaries before processing*
-
-### rooms_to_ceilings
-Performance-optimized ZeroTouch node that creates ceiling elements from room boundaries with configurable height offset.
-
-**Inputs:**
-- `Rooms`: List of rooms to process
-- `CeilingType`: Ceiling type for creation
-- `Level`: Level for ceiling placement
-- `LogPath` (optional): Path for error logging
-- `Offset` (optional): Height offset in millimeters (default: 2700)
-
-**Outputs:**
-- `created_ceilings`: List of created ceiling ElementIds
 - `failed_rooms`: List of rooms that failed processing
 - `debug_info`: List of critical messages
 - `preview`: Status messages for Dynamo UI
