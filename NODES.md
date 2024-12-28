@@ -1,7 +1,7 @@
 # Public Sandbox - Node Catalog
 > Last updated: 28 December 2024
 
-This document tracks all nodes available in the Public Sandbox Dynamo Package, organized by version. All nodes are implemented as performance-optimized C# ZeroTouch nodes for maximum efficiency and reliability.
+This document tracks all nodes available in the Public Sandbox Dynamo Package, organized by version. All nodes are implemented as performance-optimized ZeroTouch nodes for maximum efficiency and reliability.
 
 ## Current Version (v1.1.0)
 
@@ -19,7 +19,7 @@ This document tracks all nodes available in the Public Sandbox Dynamo Package, o
 ## Version History
 
 ### v1.1.0 (28 December 2024)
-- Standardized all nodes to use C# ZeroTouch implementation pattern
+- Standardized all nodes to use ZeroTouch implementation pattern
 - Optimized performance for all existing nodes
 - Enhanced error handling and logging across all nodes
 - Improved transaction management for better reliability
@@ -78,4 +78,4 @@ Performance-optimized ZeroTouch node that creates ceiling elements from room bou
 - `debug_info`: List of critical messages
 - `preview`: Status messages for Dynamo UI
 
-*Note: This catalog is maintained separately from the package README to provide historical tracking and detailed documentation of all nodes. All nodes follow a standardized C# ZeroTouch implementation pattern for optimal performance and maintainability.* 
+*Note: This catalog is maintained separately from the package README to provide historical tracking and detailed documentation of all nodes. All nodes follow a standardized ZeroTouch implementation pattern for optimal performance and maintainability.* 
