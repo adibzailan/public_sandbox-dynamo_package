@@ -4,7 +4,7 @@
 > Category: Element Level Management
 
 ## Overview
-Performance-optimized ZeroTouch node that consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
+Consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
 
 ## Purpose
 The Wall Consolidator node is designed to streamline the process of reorganizing wall elements between different levels in Revit. It maintains the integrity of wall relationships and constraints during the transfer, ensuring accurate documentation and model consistency.

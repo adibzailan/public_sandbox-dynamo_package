@@ -4,7 +4,7 @@
 > Category: Documentation Management
 
 ## Overview
-Performance-optimized ZeroTouch node that automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes across multiple views, providing granular control over grid visibility and documentation.
+Automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes across multiple views, providing granular control over grid visibility and documentation.
 
 ## Purpose
 The Grid Extent Switcher node is designed to streamline the process of managing grid visibility across multiple views in Revit. It allows for batch processing of grid extents, enabling quick transitions between 2D (ViewSpecific) and 3D (Model) modes while maintaining precise control over documentation standards.

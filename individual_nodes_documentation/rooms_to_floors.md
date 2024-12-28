@@ -4,7 +4,7 @@
 > Category: Rooms to Elements Processing
 
 ## Overview
-Performance-optimized ZeroTouch node that creates floor elements from room boundaries with automatic boundary detection and height control.
+Creates floor elements from room boundaries with automatic boundary detection and height control.
 
 ## Purpose
 The Rooms to Floors node automates the creation of floor elements based on room boundaries in Revit. It streamlines the process of generating accurate floor geometry while providing control over height offsets and maintaining model integrity.

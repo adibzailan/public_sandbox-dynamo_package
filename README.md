@@ -2,7 +2,7 @@
 > Updated: 28 December 2024
 > Version: 1.1.3
 
-Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. All nodes are performance-optimized C# ZeroTouch implementations, ensuring maximum efficiency and reliability. TLDR: streamline workflows so we can all head home earlier.
+Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. All nodes are performance-optimized ZeroTouch implementations, ensuring maximum efficiency and reliability. TLDR: streamline workflows so we can all head home earlier.
 
 ## Installation
 
@@ -25,7 +25,7 @@ Public Sandbox's active package is designed to augment, automate, and enhance Re
 ## 3 Recent Nodes
 
 ### grid_extent_switcher
-Performance-optimized ZeroTouch node that automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes across multiple views, providing granular control over grid visibility and documentation.
+Automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes across multiple views, providing granular control over grid visibility and documentation.
 
 **Inputs:**
 - `Views`: List of views to process grids in
@@ -41,7 +41,7 @@ Performance-optimized ZeroTouch node that automates switching grid extents betwe
 *Note: Views must be valid for printing and not view templates*
 
 ### wall_consolidator
-Performance-optimized ZeroTouch node that consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
+Consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
 
 **Inputs:**
 - `SourceLevel`: Level to move walls from
@@ -57,7 +57,7 @@ Performance-optimized ZeroTouch node that consolidates wall elements from one le
 *Note: Ensure elements have valid properties and relationships before processing*
 
 ### rooms_to_floors
-Performance-optimized ZeroTouch node that creates floor elements from room boundaries with automatic boundary detection and height control.
+Creates floor elements from room boundaries with automatic boundary detection and height control.
 
 **Inputs:**
 - `Rooms`: List of rooms to process

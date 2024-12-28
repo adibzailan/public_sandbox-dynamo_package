@@ -8,18 +8,18 @@ This document tracks all nodes available in the Public Sandbox Dynamo Package, o
 ### Documentation Management
 | Node Name | Description | Added In | Status |
 |-----------|-------------|----------|---------|
-| `grid_extent_switcher` | Performance-optimized ZeroTouch node for automating grid extent switching between 2D/3D modes across multiple views | v1.1.3 | Active |
+| `grid_extent_switcher` | Automating grid extent switching between 2D/3D modes across multiple views | v1.1.3 | Active |
 
 ### Element Level Management
 | Node Name | Description | Added In | Status |
 |-----------|-------------|----------|---------|
-| `wall_consolidator` | Performance-optimized ZeroTouch node for consolidating wall elements between levels while preserving relationships | v1.0.1 | Active |
+| `wall_consolidator` | Consolidating wall elements between levels while preserving relationships | v1.0.1 | Active |
 
 ### Rooms to Elements Processing
 | Node Name | Description | Added In | Status |
 |-----------|-------------|----------|---------|
-| `rooms_to_floors` | Performance-optimized ZeroTouch node for creating floor elements from room boundaries with automatic boundary detection and height control | v1.0.0 | Active |
-| `rooms_to_ceilings` | Performance-optimized ZeroTouch node for creating ceiling elements from room boundaries with configurable height offset | v1.0.0 | Active |
+| `rooms_to_floors` | Creating floor elements from room boundaries with automatic boundary detection and height control | v1.0.0 | Active |
+| `rooms_to_ceilings` | Creating ceiling elements from room boundaries with configurable height offset | v1.0.0 | Active |
 
 ## Version History
 
@@ -45,7 +45,7 @@ This document tracks all nodes available in the Public Sandbox Dynamo Package, o
 ## Node Details
 
 ### grid_extent_switcher
-Performance-optimized ZeroTouch node that automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes across multiple views, providing granular control over grid visibility and documentation.
+Automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes across multiple views, providing granular control over grid visibility and documentation.
 
 **Inputs:**
 - `Views`: List of views to process grids in
@@ -59,7 +59,7 @@ Performance-optimized ZeroTouch node that automates switching grid extents betwe
 - `debug_info`: Detailed debug messages
 
 ### wall_consolidator
-Performance-optimized ZeroTouch node that consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
+Consolidates wall elements from one level to another while preserving their relative positions, constraints, and relationships.
 
 **Inputs:**
 - `SourceLevel`: Level to move walls from
@@ -73,7 +73,7 @@ Performance-optimized ZeroTouch node that consolidates wall elements from one le
 - `failed_ids`: ElementIds of failed walls
 
 ### rooms_to_floors
-Performance-optimized ZeroTouch node that creates floor elements from room boundaries with automatic boundary detection and height control.
+Creates floor elements from room boundaries with automatic boundary detection and height control.
 
 **Inputs:**
 - `Rooms`: List of rooms to process
@@ -89,7 +89,7 @@ Performance-optimized ZeroTouch node that creates floor elements from room bound
 - `preview`: Status messages for Dynamo UI
 
 ### rooms_to_ceilings
-Performance-optimized ZeroTouch node that creates ceiling elements from room boundaries with configurable height offset.
+Creates ceiling elements from room boundaries with configurable height offset.
 
 **Inputs:**
 - `Rooms`: List of rooms to process
@@ -104,4 +104,4 @@ Performance-optimized ZeroTouch node that creates ceiling elements from room bou
 - `debug_info`: List of critical messages
 - `preview`: Status messages for Dynamo UI
 
-*Note: This catalog is maintained separately from the package README to provide historical tracking and detailed documentation of all nodes. All nodes follow a standardized ZeroTouch implementation pattern for optimal performance and maintainability.* 
+*Note: This catalog is maintained separately from the package README to provide historical tracking and detailed documentation of all nodes. All nodes follow a standardized implementation pattern for optimal performance and maintainability.* 

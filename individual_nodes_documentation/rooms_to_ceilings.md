@@ -4,7 +4,7 @@
 > Category: Rooms to Elements Processing
 
 ## Overview
-Performance-optimized ZeroTouch node that creates ceiling elements from room boundaries with configurable height offset.
+Creates ceiling elements from room boundaries with configurable height offset.
 
 ## Purpose
 The Rooms to Ceilings node automates the creation of ceiling elements based on room boundaries in Revit. It streamlines the process of generating accurate ceiling geometry while providing control over height offsets and maintaining model integrity.
