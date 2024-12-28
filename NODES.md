@@ -18,11 +18,12 @@ This document tracks all nodes available in the Public Sandbox Dynamo Package, o
 
 ## Version History
 
-### v1.1.0 (28 December 2024)
+### v1.1.1 (28 December 2024)
 - Standardized all nodes to use ZeroTouch implementation pattern
 - Optimized performance for all existing nodes
 - Enhanced error handling and logging across all nodes
 - Improved transaction management for better reliability
+- Standardized namespace to "Geometry" for better categorization and organization
 
 ### v1.0.1 (25 December 2024)
 - Added `wall_consolidator` node

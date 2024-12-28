@@ -1,6 +1,6 @@
 # Public Sandbox - Dynamo Package
 > Updated: 28 December 2024
-> Version: 1.1.0
+> Version: 1.1.1
 
 Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. All nodes are performance-optimized C# ZeroTouch implementations, ensuring maximum efficiency and reliability. TLDR: streamline workflows so we can all head home earlier.
 
@@ -21,6 +21,7 @@ Public Sandbox's active package is designed to augment, automate, and enhance Re
 - Performance optimization across all nodes
 - Enhanced error handling and logging
 - Improved transaction management
+- Standardized namespace to "Geometry" for better categorization
 
 ## 3 Recent Nodes
 
