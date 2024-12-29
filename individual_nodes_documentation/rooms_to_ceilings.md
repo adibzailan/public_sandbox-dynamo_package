@@ -1,6 +1,6 @@
 # Rooms to Ceilings
-> Last Updated: 28 December 2024
-> Version: 1.1.3
+> Last Updated: 29 December 2024
+> Version: 1.1.4
 > Category: Rooms to Elements Processing
 
 ## Overview
@@ -15,7 +15,6 @@ The Rooms to Ceilings node automates the creation of ceiling elements based on r
 | `Rooms` | List<Room> | Yes | List of rooms to process | - |
 | `CeilingType` | CeilingType | Yes | Ceiling type for creation | - |
 | `Level` | Level | Yes | Level for ceiling placement | - |
-| `LogPath` | string | No | Path for error logging | System temp directory |
 | `Offset` | double | No | Height offset in millimeters | 2700 |
 
 ## Outputs
@@ -62,8 +61,13 @@ The Rooms to Ceilings node automates the creation of ceiling elements based on r
 - Some complex room geometries may need manual verification
 
 ## Version History
-### v1.1.3 (Current)
-- Enhanced logging system
+### v1.1.4 (Current)
+- Removed file-based logging in favor of in-memory debugging for significantly improved performance
+- Enhanced error handling with comprehensive in-memory debug information
+- Standardized namespace organization for better categorization
+
+### v1.1.3
+- Enhanced logging system with better file access handling
 - Improved error recovery
 - Standardized namespace organization
 

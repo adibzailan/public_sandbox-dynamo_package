@@ -74,4 +74,4 @@
 - Contact: hello@publicsandbox.net
 
 ---
-*Note: This template provides a standardized structure for documenting Public Sandbox nodes. Each section should be filled with relevant, accurate, and user-focused information. Remove any sections that don't apply to your node, but maintain the overall structure for consistency.* 
+*Note: This template provides a standardized structure for documenting Public Sandbox nodes. Each section should be filled with relevant, accurate, and user-focused information.* 

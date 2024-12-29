@@ -1,6 +1,6 @@
 # Rooms to Floors
-> Last Updated: 28 December 2024
-> Version: 1.1.3
+> Last Updated: 29 December 2024
+> Version: 1.1.4
 > Category: Rooms to Elements Processing
 
 ## Overview
@@ -15,7 +15,6 @@ The Rooms to Floors node automates the creation of floor elements based on room 
 | `Rooms` | List<Room> | Yes | List of rooms to process | - |
 | `FloorType` | FloorType | Yes | Floor type for creation | - |
 | `Level` | Level | Yes | Level for floor placement | - |
-| `LogPath` | string | No | Path for error logging | System temp directory |
 | `Offset` | double | No | Height offset in millimeters | 0 |
 
 ## Outputs
@@ -62,8 +61,13 @@ The Rooms to Floors node automates the creation of floor elements based on room 
 - Some complex room geometries may need manual verification
 
 ## Version History
-### v1.1.3 (Current)
-- Enhanced logging system
+### v1.1.4 (Current)
+- Removed file-based logging in favor of in-memory debugging for significantly improved performance
+- Enhanced error handling with comprehensive in-memory debug information
+- Standardized namespace organization for better categorization
+
+### v1.1.3
+- Enhanced logging system with better file access handling
 - Improved error recovery
 - Standardized namespace organization
 

@@ -1,6 +1,6 @@
 # Wall Consolidator
-> Last Updated: 28 December 2024
-> Version: 1.1.3
+> Last Updated: 29 December 2024
+> Version: 1.1.4
 > Category: Element Level Management
 
 ## Overview
@@ -14,7 +14,6 @@ The Wall Consolidator node is designed to streamline the process of reorganizing
 |-----------|------|----------|-------------|---------|
 | `SourceLevel` | Level | Yes | Level to move walls from | - |
 | `TargetLevel` | Level | Yes | Level to move walls to | - |
-| `LogPath` | string | No | Path for error logging | System temp directory |
 
 ## Outputs
 | Parameter | Type | Description |
@@ -59,8 +58,13 @@ The Wall Consolidator node is designed to streamline the process of reorganizing
 - Some complex wall joins may need manual verification
 
 ## Version History
-### v1.1.3 (Current)
-- Enhanced logging system
+### v1.1.4 (Current)
+- Removed file-based logging in favor of in-memory debugging for significantly improved performance
+- Enhanced error handling with comprehensive in-memory debug information
+- Standardized namespace organization for better categorization
+
+### v1.1.3
+- Enhanced logging system with better file access handling
 - Improved error recovery
 - Standardized namespace organization
 
