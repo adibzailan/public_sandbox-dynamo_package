@@ -1,9 +1,9 @@
 # Public Sandbox - Node Catalog
-> Last updated: 28 December 2024
+> Last updated: 29 December 2024
 
 This document tracks all nodes available in the Public Sandbox Dynamo Package, organized by version. All nodes are implemented as performance-optimized ZeroTouch nodes for maximum efficiency and reliability.
 
-## Current Version (v1.1.3)
+## Current Version (v1.1.4)
 
 ### Documentation Management
 | Node Name | Description | Added In | Status |
@@ -22,6 +22,11 @@ This document tracks all nodes available in the Public Sandbox Dynamo Package, o
 | `rooms_to_ceilings` | Creating ceiling elements from room boundaries with configurable height offset | v1.0.0 | Active |
 
 ## Version History
+
+### v1.1.4 (29 December 2024)
+- Removed file-based logging in favor of in-memory debugging for significantly improved performance
+- Enhanced error handling with comprehensive in-memory debug information
+- Standardized namespace organization for better categorization
 
 ### v1.1.3 (28 December 2024)
 - Added `grid_extent_switcher` node for automated grid extent management

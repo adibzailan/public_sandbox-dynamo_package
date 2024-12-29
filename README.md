@@ -1,6 +1,6 @@
 # Public Sandbox - Dynamo Package
-> Updated: 28 December 2024
-> Version: 1.1.3
+> Updated: 29 December 2024
+> Version: 1.1.4
 
 Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. All nodes are performance-optimized ZeroTouch implementations, ensuring maximum efficiency and reliability. TLDR: streamline workflows so we can all head home earlier.
 
@@ -16,10 +16,9 @@ Public Sandbox's active package is designed to augment, automate, and enhance Re
 3. Search for `PublicSandbox`
 4. Click **Install** to add the package to your Dynamo environment
 
-## Recent Updates (v1.1.3)
-- Added new `grid_extent_switcher` node for automated grid extent management
-- Enhanced logging system with better file access handling
-- Improved error recovery across all nodes
+## Recent Updates (v1.1.4)
+- Removed file-based logging in favor of in-memory debugging for significantly improved performance
+- Enhanced error handling with comprehensive in-memory debug information
 - Standardized namespace organization for better categorization
 
 ## 3 Recent Nodes
@@ -30,7 +29,6 @@ Automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes 
 **Inputs:**
 - `Views`: List of views to process grids in
 - `Make2D`: Boolean to toggle between 2D (true) and 3D (false) modes
-- `LogPath` (optional): Path for error logging
 
 **Outputs:**
 - `success_list`: List of successfully processed grid IDs
@@ -46,7 +44,6 @@ Consolidates wall elements from one level to another while preserving their rela
 **Inputs:**
 - `SourceLevel`: Level to move walls from
 - `TargetLevel`: Level to move walls to
-- `LogPath` (optional): Path for error logging
 
 **Outputs:**
 - `success_list`: List of successfully processed walls
@@ -63,7 +60,6 @@ Creates floor elements from room boundaries with automatic boundary detection an
 - `Rooms`: List of rooms to process
 - `FloorType`: Floor type for creation
 - `Level`: Level for floor placement
-- `LogPath` (optional): Path for error logging
 - `Offset` (optional): Height offset in millimeters (default: 0)
 
 **Outputs:**
