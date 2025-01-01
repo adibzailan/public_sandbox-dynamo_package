@@ -1,6 +1,6 @@
 # Public Sandbox - Dynamo Package
-> Updated: 29 December 2024
-> Version: 1.1.4
+> Updated: 1 January 2025
+> Version: 1.1.5
 
 Public Sandbox's active package is designed to augment, automate, and enhance Revit tasks, focusing on documentation and, in the near future, geometry creation. All nodes are performance-optimized ZeroTouch implementations, ensuring maximum efficiency and reliability. TLDR: streamline workflows so we can all head home earlier.
 
@@ -16,12 +16,28 @@ Public Sandbox's active package is designed to augment, automate, and enhance Re
 3. Search for `PublicSandbox`
 4. Click **Install** to add the package to your Dynamo environment
 
-## Recent Updates (v1.1.4)
+## Recent Updates (v1.1.5)
 - Removed file-based logging in favor of in-memory debugging for significantly improved performance
 - Enhanced error handling with comprehensive in-memory debug information
 - Standardized namespace organization for better categorization
+- Added `floor_consolidator` node for managing floor elements between levels
 
 ## 3 Recent Nodes
+
+### floor_consolidator
+Consolidates floor elements from one level to another while preserving their relative positions and relationships, with automatic handling of height offsets and level parameters.
+
+**Inputs:**
+- `SourceLevel`: Level containing floors to move
+- `TargetLevel`: Level to move floors to
+
+**Outputs:**
+- `moved_floors`: List of successfully moved floor ElementIds
+- `failed_floors`: List of failed floor ElementIds
+- `preview`: Status messages and operation summary
+- `debug_info`: Detailed debug messages with timestamps
+
+*Note: Requires Revit 2022+ and preserves floor relationships during transfer*
 
 ### grid_extent_switcher
 Automates switching grid extents between 2D (ViewSpecific) and 3D (Model) modes across multiple views, providing granular control over grid visibility and documentation.
@@ -52,23 +68,6 @@ Consolidates wall elements from one level to another while preserving their rela
 - `failed_ids`: ElementIds of failed walls
 
 *Note: Ensure elements have valid properties and relationships before processing*
-
-### rooms_to_floors
-Creates floor elements from room boundaries with automatic boundary detection and height control.
-
-**Inputs:**
-- `Rooms`: List of rooms to process
-- `FloorType`: Floor type for creation
-- `Level`: Level for floor placement
-- `Offset` (optional): Height offset in millimeters (default: 0)
-
-**Outputs:**
-- `created_floors`: List of created floor ElementIds
-- `failed_rooms`: List of rooms that failed processing
-- `debug_info`: List of critical messages
-- `preview`: Status messages for Dynamo UI
-
-*Note: Ensure rooms have valid boundaries before processing*
 
 ## Contact
 

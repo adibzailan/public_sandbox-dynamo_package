@@ -1,9 +1,9 @@
 # Public Sandbox - Node Catalog
-> Last updated: 29 December 2024
+> Last updated: 1 January 2025
 
 This document tracks all nodes available in the Public Sandbox Dynamo Package, organized by version. All nodes are implemented as performance-optimized ZeroTouch nodes for maximum efficiency and reliability.
 
-## Current Version (v1.1.4)
+## Current Version (v1.1.5)
 
 ### Documentation Management
 | Node Name | Description | Added In | Status |
@@ -14,6 +14,7 @@ This document tracks all nodes available in the Public Sandbox Dynamo Package, o
 | Node Name | Description | Added In | Status |
 |-----------|-------------|----------|---------|
 | `wall_consolidator` | Consolidating wall elements between levels while preserving relationships | v1.0.1 | Active |
+| `floor_consolidator` | Consolidating floor elements between levels while preserving positions and offsets | v1.1.5 | Active |
 
 ### Rooms to Elements Processing
 | Node Name | Description | Added In | Status |
@@ -22,6 +23,9 @@ This document tracks all nodes available in the Public Sandbox Dynamo Package, o
 | `rooms_to_ceilings` | Creating ceiling elements from room boundaries with configurable height offset | v1.0.0 | Active |
 
 ## Version History
+
+### v1.1.5 (1 January 2025)
+- Added `floor_consolidator` node
 
 ### v1.1.4 (29 December 2024)
 - Removed file-based logging in favor of in-memory debugging for significantly improved performance
@@ -47,4 +51,4 @@ This document tracks all nodes available in the Public Sandbox Dynamo Package, o
 - Added `rooms_to_ceilings` node
 - Initial release
 
-*Note: This catalog is maintained separately from the package README to provide historical tracking and detailed documentation of all nodes. All nodes follow a standardized implementation pattern for optimal performance and maintainability.* 
+*Note: This catalog is maintained separately from the package README to provide historical tracking and detailed documentation of all nodes. All nodes follow a standardized implementation pattern for optimal performance and maintainability.*

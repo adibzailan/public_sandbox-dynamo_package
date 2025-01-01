@@ -1,6 +1,6 @@
 # Grid Extent Switcher
-> Last Updated: 29 December 2024
-> Version: 1.1.4
+> Last Updated: 1 January 2025
+> Version: 4.0.0
 > Category: Documentation Management
 
 ## Overview
